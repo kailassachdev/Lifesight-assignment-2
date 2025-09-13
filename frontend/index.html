@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Mix Model Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marketing Mix Model Analysis</h1>
+            <p>An analysis of revenue drivers based on a 2-year weekly dataset.</p>
+        </header>
+
+        <section id="results">
+            <h2>Key Performance</h2>
+            <div class="kpi-container">
+                <div class="kpi">
+                    <h3>Root Mean Squared Error (RMSE)</h3>
+                    <p>78,577.76</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="plots">
+            <h2>Visualizations</h2>
+            <div class="plot-container">
+                <div class="plot">
+                    <h3>Revenue Over Time</h3>
+                    <img src="../plots/revenue_over_time.png" alt="Revenue Over Time">
+                </div>
+                <div class="plot">
+                    <h3>Spend Over Time</h3>
+                    <img src="../plots/spend_over_time.png" alt="Spend Over Time">
+                </div>
+                <div class="plot">
+                    <h3>Distribution of Revenue</h3>
+                    <img src="../plots/revenue_histogram.png" alt="Distribution of Revenue">
+                </div>
+                <div class="plot">
+                    <h3>Correlation Matrix</h3>
+                    <img src="../plots/correlation_heatmap.png" alt="Correlation Matrix">
+                </div>
+                <div class="plot">
+                    <h3>Actual vs. Predicted Revenue</h3>
+                    <img src="../plots/actual_vs_predicted.png" alt="Actual vs. Predicted Revenue">
+                </div>
+                <div class="plot">
+                    <h3>Distribution of Residuals</h3>
+                    <img src="../plots/residuals_distribution.png" alt="Distribution of Residuals">
+                </div>
+            </div>
+        </section>
+
+        <section id="drivers">
+            <h2>Revenue Drivers</h2>
+            <p>The table below shows the coefficients of the final model, indicating the most important drivers of revenue. Larger absolute values indicate a stronger impact.</p>
+            <table id="drivers-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Coefficient</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be loaded here by script.js -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>Project by Gemini</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
