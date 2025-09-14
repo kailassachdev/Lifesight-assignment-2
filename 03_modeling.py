@@ -11,11 +11,11 @@ import os
 # --- 1. Load and Prepare Data ---
 
 # Create a directory for plots if it doesn't exist
-plots_dir = r"c:\Users\KAILAS\Desktop\assignment 1\plots"
+plots_dir = r"plots"
 if not os.path.exists(plots_dir):
     os.makedirs(plots_dir)
 
-file_path = r"c:\Users\KAILAS\Desktop\assignment 1\Train\Assessment 2 - MMM Weekly.csv"
+file_path = r"Train\Assessment 2 - MMM Weekly.csv"
 df = pd.read_csv(file_path)
 
 # Convert 'week' to datetime and set as index
@@ -153,6 +153,6 @@ print(coefficients.to_string())
 
 
 # Save coefficients to a file
-coefficients.to_csv(r"c:\Users\KAILAS\Desktop\assignment 1\revenue_drivers.csv", index=False)
+coefficients.to_csv(r"revenue_drivers.csv", index=False)
 
 print("\nModeling script finished. Plots and coefficients saved.")

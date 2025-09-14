@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = r"c:\Users\KAILAS\Desktop\assignment 1\Train\Assessment 2 - MMM Weekly.csv"
+file_path = r"Train\Assessment 2 - MMM Weekly.csv"
 
 try:
     df = pd.read_csv(file_path)
